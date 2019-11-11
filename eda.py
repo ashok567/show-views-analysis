@@ -15,7 +15,7 @@ def days_count(date):
 
 def weekdays(days):
     weekday_names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    weekday = (days+3) % 7  # star date is wed
+    weekday = (days+3) % 7
     if weekday == 0:
         weekday = 7
     return weekday_names[weekday-1]
